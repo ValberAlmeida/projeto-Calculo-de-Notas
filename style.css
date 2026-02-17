@@ -1,0 +1,86 @@
+@keyframes crescer {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes animacao {
+  from {
+    background-color: rgb(249, 241, 0);
+    background-color: yellow;
+  }
+  to {
+    background-color: rgb(249, 241, 0);
+    background-color: rgb(202, 202, 202);
+  }
+}
+
+body {
+  background-image: url("imagem/escola.jpg");
+}
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 17%;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  white-space: nowrap;
+  border-style: ridge;
+  border-color: rgb(0, 0, 0);
+
+  border-radius: 100px;
+  background-color: rgb(225, 225, 225);
+  width: 70%;
+}
+
+.calculo {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5%;
+  margin-left: 35%;
+  font-size: 30px;
+  font-weight: bold;
+  bottom: 50%;
+
+  border: 20px;
+  border-style: ridge;
+  background-color: rgb(208, 208, 208);
+  border-color: rgb(0, 0, 0);
+  background-size: 70%;
+  width: 30%;
+}
+
+.resultado {
+  margin-top: 10px;
+  animation: animacao 1s infinite;
+  text-align: center;
+  font-size: 40px;
+}
+
+.botao {
+  margin-left: 2%;
+}
+
+.reinicio a {
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+}
+
+.reinicio {
+  position: absolute;
+  margin-top: -20%;
+  margin-left: -30%;
+  text-decoration: none;
+  width: 400px;
+  background-color: red;
+  font-size: 40px;
+  animation: crescer 4s infinite;
+}
+
+.reinicio:hover {
+  background-color: green;
+}
